@@ -60,7 +60,7 @@ try:
             with st.container(border=True):
                 st.write(f"**{title if title else fname}**")
                 st.caption(f"{fname}")
-                st.link_button("Download", url, key=f"dl_{i}_{fname}")
+                st.link_button("Download", url, key=f"dl_{f['name']}"
     else:
         st.info("No uploads yet")
 except Exception as e:
